@@ -1,1 +1,0 @@
-# siemens-task-manager-app
