@@ -17,12 +17,6 @@ const Dashboard: React.FC = () => {
 
   const navigate = useNavigate();
 
-  // Redirect to login if not logged in
-  useEffect(() => {
-    const user = localStorage.getItem("token");
-    if (!user) navigate("/login");
-  }, [navigate]);
-
   // logout
   const logout = () => {
     localStorage.removeItem("token");
